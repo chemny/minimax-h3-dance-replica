@@ -10,23 +10,23 @@
 
 ## 效果预览
 
-三个历史任务的完整无声成片；人物细节和动作仍有偏差，不代表逐帧一致。
+三个历史任务的完整成片，均保留原音乐；人物细节和动作仍有偏差，不代表逐帧一致。
 
-### 酒红裙：人物与场景引导
+### 酒红裙：高清精修完整舞蹈
 
-https://github.com/user-attachments/assets/10068ae3-253a-4f0c-8667-6ea08fc361d6
+https://github.com/user-attachments/assets/60f3d8de-1491-41bc-88f9-36170e7ef873
 
-[播放视频 · 7.17 秒](assets/videos/ref2v-wine-dress.mp4)
+[播放视频 · 14.29 秒](assets/videos/wine-dress-full-dance.mp4)
 
-### 碎花裙：Character Swap 换人
+### 酒红裙：深度引导舞蹈
 
-https://github.com/user-attachments/assets/fddc741f-6f05-4401-a69b-ce72cc0994fc
+https://github.com/user-attachments/assets/289cb5e0-4bcd-435f-abb6-ec246b457975
 
-[播放视频 · 7.17 秒](assets/videos/character-swap-floral.mp4)
+[播放视频 · 7.17 秒](assets/videos/wine-dress-depth-dance.mp4)
 
 ### 碎花裙：原生 Ref2V 引导
 
-https://github.com/user-attachments/assets/ed821b8a-03c7-48c4-a494-2666324d2bc9
+https://github.com/user-attachments/assets/57031253-132d-4518-b507-9b273f4e176a
 
 [播放视频 · 8.17 秒](assets/videos/ref2v-floral.mp4)
 
@@ -151,7 +151,7 @@ minimax-h3-dance-replica/
 └── README.zh.md
 ```
 
-技能包含指引、脚本、工作流图和三个演示视频，不打包模型权重、原片和原音乐。详细内容见[运行命令](references/runtime.md)、[安装指南](references/installation.md)、[路线配方](references/routes.md)、[恢复说明](references/recovery.md)和[开发检查](references/development.md)。
+技能包含指引、脚本、工作流图和三个演示视频，不打包模型权重和原片。详细内容见[运行命令](references/runtime.md)、[安装指南](references/installation.md)、[路线配方](references/routes.md)、[恢复说明](references/recovery.md)和[开发检查](references/development.md)。
 
 ## 许可
 

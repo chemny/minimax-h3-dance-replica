@@ -10,23 +10,23 @@ Use it when you want the photographed character to perform a reference dance. Mo
 
 ## Preview
 
-Three complete, silent outputs from earlier tasks. Appearance and motion still vary from the references; these are not frame-exact reproductions.
+Three complete outputs from earlier tasks, each with its original music. Appearance and motion still vary from the references; these are not frame-exact reproductions.
 
-### Wine-red dress: character and scene guidance
+### Wine-red dress: full dance with HD refinement
 
-https://github.com/user-attachments/assets/10068ae3-253a-4f0c-8667-6ea08fc361d6
+https://github.com/user-attachments/assets/60f3d8de-1491-41bc-88f9-36170e7ef873
 
-[Play video · 7.17 seconds](assets/videos/ref2v-wine-dress.mp4)
+[Play video · 14.29 seconds](assets/videos/wine-dress-full-dance.mp4)
 
-### Floral dress: Character Swap
+### Wine-red dress: depth-guided dance
 
-https://github.com/user-attachments/assets/fddc741f-6f05-4401-a69b-ce72cc0994fc
+https://github.com/user-attachments/assets/289cb5e0-4bcd-435f-abb6-ec246b457975
 
-[Play video · 7.17 seconds](assets/videos/character-swap-floral.mp4)
+[Play video · 7.17 seconds](assets/videos/wine-dress-depth-dance.mp4)
 
 ### Floral dress: native Ref2V guidance
 
-https://github.com/user-attachments/assets/ed821b8a-03c7-48c4-a494-2666324d2bc9
+https://github.com/user-attachments/assets/57031253-132d-4518-b507-9b273f4e176a
 
 [Play video · 8.17 seconds](assets/videos/ref2v-floral.mp4)
 
@@ -151,7 +151,7 @@ minimax-h3-dance-replica/
 └── README.zh.md
 ```
 
-The package contains instructions, scripts, a workflow graph and the three demo videos. Model weights, source footage and source music are not bundled. See [runtime commands](references/runtime.md), [installation](references/installation.md), [route recipes](references/routes.md), [recovery](references/recovery.md) and [development checks](references/development.md).
+The package contains instructions, scripts, a workflow graph and the three demo videos. Model weights and source footage are not bundled. See [runtime commands](references/runtime.md), [installation](references/installation.md), [route recipes](references/routes.md), [recovery](references/recovery.md) and [development checks](references/development.md).
 
 ## License
 
