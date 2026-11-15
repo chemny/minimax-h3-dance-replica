@@ -14,19 +14,19 @@ Three complete, silent outputs from earlier tasks. Appearance and motion still v
 
 ### Wine-red dress: character and scene guidance
 
-<video src="assets/videos/ref2v-wine-dress.mp4" controls preload="metadata" width="320"></video>
+https://github.com/user-attachments/assets/10068ae3-253a-4f0c-8667-6ea08fc361d6
 
 [Play video · 7.17 seconds](assets/videos/ref2v-wine-dress.mp4)
 
 ### Floral dress: Character Swap
 
-<video src="assets/videos/character-swap-floral.mp4" controls preload="metadata" width="320"></video>
+https://github.com/user-attachments/assets/fddc741f-6f05-4401-a69b-ce72cc0994fc
 
 [Play video · 7.17 seconds](assets/videos/character-swap-floral.mp4)
 
 ### Floral dress: native Ref2V guidance
 
-<video src="assets/videos/ref2v-floral.mp4" controls preload="metadata" width="320"></video>
+https://github.com/user-attachments/assets/ed821b8a-03c7-48c4-a494-2666324d2bc9
 
 [Play video · 8.17 seconds](assets/videos/ref2v-floral.mp4)
 

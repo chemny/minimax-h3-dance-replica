@@ -14,19 +14,19 @@
 
 ### 酒红裙：人物与场景引导
 
-<video src="assets/videos/ref2v-wine-dress.mp4" controls preload="metadata" width="320"></video>
+https://github.com/user-attachments/assets/10068ae3-253a-4f0c-8667-6ea08fc361d6
 
 [播放视频 · 7.17 秒](assets/videos/ref2v-wine-dress.mp4)
 
 ### 碎花裙：Character Swap 换人
 
-<video src="assets/videos/character-swap-floral.mp4" controls preload="metadata" width="320"></video>
+https://github.com/user-attachments/assets/fddc741f-6f05-4401-a69b-ce72cc0994fc
 
 [播放视频 · 7.17 秒](assets/videos/character-swap-floral.mp4)
 
 ### 碎花裙：原生 Ref2V 引导
 
-<video src="assets/videos/ref2v-floral.mp4" controls preload="metadata" width="320"></video>
+https://github.com/user-attachments/assets/ed821b8a-03c7-48c4-a494-2666324d2bc9
 
 [播放视频 · 8.17 秒](assets/videos/ref2v-floral.mp4)
 
