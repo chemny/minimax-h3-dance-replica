@@ -12,7 +12,19 @@ def probe(path,packets=False):
     args=['ffprobe','-v','error']
     if packets:args+=['-select_streams','a:0','-show_packets','-show_entries','packet=data_hash','-show_data_hash','sha256']
     else:args+=['-show_format','-show_streams']
-    return json.loads(subprocess.check_output(args+['-of','json',str(path)]))
+    data=json.loads(subprocess.check_output(args+['-of','json',str(path)]))
+    if packets:
+        # Some FFprobe versions also emit container-specific skip/discard side data.
+        # Compare encoded packet bytes, with their count and order, across remuxes.
+        hashes=[]
+        for packet in data.get('packets',[]):
+            value=packet.get('data_hash','')
+            if not isinstance(value,str) or not value.startswith('SHA256:') or len(value)!=71 or any(c not in '0123456789abcdef' for c in value[7:].lower()):
+                raise ValueError('FFprobe did not return an audio packet SHA-256')
+            hashes.append({'data_hash':value})
+        if not hashes:raise ValueError('FFprobe returned no audio packets')
+        data['packets']=hashes
+    return data
 def frames(seconds):return 5+17*math.ceil((seconds*24-5)/17)
 def output_dir(path):
     if path.exists():raise ValueError('Use a new output directory to preserve existing results')

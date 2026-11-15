@@ -27,6 +27,19 @@ import check_environment
 
 
 class PortabilityTests(unittest.TestCase):
+    def test_audio_probe_keeps_packet_hash_count_and_order_without_container_side_data(self):
+        a='SHA256:'+'a'*64;b='SHA256:'+'b'*64
+        def probe(packets):
+            with patch('media.subprocess.check_output',return_value=json.dumps({'packets':packets}).encode()):
+                return media.probe('fixture',True)['packets']
+        first=probe([{'data_hash':a,'side_data_list':[{'skip_samples':1024}]},{'data_hash':b}])
+        remuxed=probe([{'data_hash':a},{'data_hash':b,'side_data_list':[{'discard_padding':1}]}])
+        self.assertEqual(first,remuxed)
+        self.assertNotEqual(first,probe([{'data_hash':a}]))
+        self.assertNotEqual(first,probe([{'data_hash':b},{'data_hash':a}]))
+        with self.assertRaisesRegex(ValueError,'SHA-256'):probe([{'side_data_list':[]}])
+        with self.assertRaisesRegex(ValueError,'SHA-256'):probe([{'data_hash':'SHA256:'+'z'*64}])
+
     def test_cli_helpers_handle_chinese_paths_with_legacy_stdout(self):
         with tempfile.TemporaryDirectory() as temp:
             root=Path(temp)/'中文 路径';root.mkdir()
