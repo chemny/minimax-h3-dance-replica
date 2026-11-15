@@ -52,7 +52,8 @@ def main():
             run(['powershell.exe','-NoProfile','-NonInteractive','-ExecutionPolicy','Bypass','-File',
                  str(installed/'scripts/check_environment.ps1'),'-Config',str(config),'-ClientPython',sys.executable])
             command=f'call "{installed / "Check-Environment.bat"}" -Config "{config}" -ClientPython "{sys.executable}"'
-            run(['cmd.exe','/d','/s','/c',command])
+            # cmd parses its own quoting; list2cmdline escapes quotes for a C runtime.
+            run('cmd.exe /d /s /c \"'+command+'\"')
             assert len(requests)==3 and all(r==('GET','/v1/workflows') for r in requests),requests
             report=json.loads((base/'environment-report.json').read_text(encoding='utf-8-sig'))
             assert report['mode']=='gateway' and report['route']=='ref2v' and report['steps']==8
