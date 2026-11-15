@@ -121,7 +121,7 @@ class PortabilityTests(unittest.TestCase):
                 s.file('data',root/'task/data.bin',lambda p:p.write_bytes(b'bad'))
             foreign=root/'foreign';foreign.mkdir();(foreign/'user.txt').write_text('keep')
             with self.assertRaisesRegex(ValueError,'no checkpoint'):Stage(foreign,{'input':'a'})
-            self.assertEqual((foreign/'user.txt').read_text(),'keep')
+            self.assertEqual((foreign/'user.txt').read_text(encoding='utf-8'),'keep')
 
 
 @unittest.skipUnless(shutil.which('ffmpeg') and shutil.which('ffprobe'),'FFmpeg is required for synthetic media checks')
@@ -180,7 +180,7 @@ class MediaResumeTests(unittest.TestCase):
             media.finish(args)
         self.assertEqual((dest/'picture.mp4').read_bytes(),before)
         self.assertFalse(any('-c:v' in c for c in commands))
-        verification=json.loads((dest/'verification.json').read_text())
+        verification=json.loads((dest/'verification.json').read_text(encoding='utf-8'))
         self.assertEqual(verification['frames'],48)
         self.assertTrue(verification['source_audio_packets_equal'])
 
@@ -234,9 +234,9 @@ class MediaResumeTests(unittest.TestCase):
         def resumed(command):commands.append(command);return original(command)
         with patch('compare.ffmpeg',side_effect=resumed):compare.compare(self.source,self.source,dest,cell_width=128,interval=1)
         self.assertFalse(any('-filter_complex' in c for c in commands))
-        acceptance=dest/'acceptance.json';data=json.loads(acceptance.read_text());data['user_acceptance']='accepted';acceptance.write_text(json.dumps(data),encoding='utf-8')
+        acceptance=dest/'acceptance.json';data=json.loads(acceptance.read_text(encoding='utf-8'));data['user_acceptance']='accepted';acceptance.write_text(json.dumps(data),encoding='utf-8')
         compare.compare(self.source,self.source,dest,cell_width=128,interval=1)
-        self.assertEqual(json.loads(acceptance.read_text())['user_acceptance'],'accepted')
+        self.assertEqual(json.loads(acceptance.read_text(encoding='utf-8'))['user_acceptance'],'accepted')
 
     def test_segment_join_resumes_without_trimming_again(self):
         root=self.root/'分段';root.mkdir();source=root/'source4.mp4'
@@ -259,7 +259,7 @@ class MediaResumeTests(unittest.TestCase):
         def resumed(command):commands.append(command);return original(command)
         with patch('media.run',side_effect=resumed):flow.finish()
         self.assertFalse(any('trim=start_frame' in ' '.join(c) for c in commands))
-        self.assertEqual(json.loads((flow.out/'delivery/verification.json').read_text())['frames'],96)
+        self.assertEqual(json.loads((flow.out/'delivery/verification.json').read_text(encoding='utf-8'))['frames'],96)
 
 
 if __name__=='__main__':unittest.main()
