@@ -1,0 +1,207 @@
+{
+  "schema": 1,
+  "metadata_verified_date": "2026-11-15",
+  "downloads_automatic": false,
+  "models": [
+    {
+      "filename": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+      "repository": "Comfy-Org/MiniMax-H3",
+      "revision": "54472221d27c695fca9621b0c3ed52f06c4af707",
+      "repository_path": "diffusion_models/minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+      "folder": "models/diffusion_models",
+      "routes": [
+        "depth"
+      ],
+      "size_bytes": 20970379616,
+      "sha256": "e889202c41dafb67b10d67b97f0d8541508036a6090af23425a5c2615d03c47a",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/54472221d27c695fca9621b0c3ed52f06c4af707/diffusion_models/minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+      "source_page": "https://huggingface.co/Comfy-Org/MiniMax-H3"
+    },
+    {
+      "filename": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "repository": "Comfy-Org/MiniMax-H3",
+      "revision": "54472221d27c695fca9621b0c3ed52f06c4af707",
+      "repository_path": "diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "folder": "models/diffusion_models",
+      "routes": [
+        "ref2v",
+        "character_swap"
+      ],
+      "size_bytes": 20970379616,
+      "sha256": "9255f52b6677845ad238f20dfaafa94727053694127ab7f255c048f0f9365779",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/54472221d27c695fca9621b0c3ed52f06c4af707/diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "source_page": "https://huggingface.co/Comfy-Org/MiniMax-H3"
+    },
+    {
+      "filename": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "repository": "Comfy-Org/MiniMax-H3",
+      "revision": "54472221d27c695fca9621b0c3ed52f06c4af707",
+      "repository_path": "text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "folder": "models/text_encoders",
+      "routes": [
+        "ref2v",
+        "depth",
+        "character_swap"
+      ],
+      "size_bytes": 15687142551,
+      "sha256": "35a88d51044231fe332301d7a62aa81e3f2cba62febeb446e2c1e3e0ef76f2c6",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/54472221d27c695fca9621b0c3ed52f06c4af707/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "source_page": "https://huggingface.co/Comfy-Org/MiniMax-H3"
+    },
+    {
+      "filename": "minimax_h3_video_vae_fp16.safetensors",
+      "repository": "Comfy-Org/MiniMax-H3",
+      "revision": "54472221d27c695fca9621b0c3ed52f06c4af707",
+      "repository_path": "vae/minimax_h3_video_vae_fp16.safetensors",
+      "folder": "models/vae",
+      "routes": [
+        "ref2v",
+        "depth",
+        "character_swap"
+      ],
+      "size_bytes": 5207808496,
+      "sha256": "7c1f131492e7eddacaac9069a61b81bdd39de5cc96561e677c5eab1cdce5e522",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/54472221d27c695fca9621b0c3ed52f06c4af707/vae/minimax_h3_video_vae_fp16.safetensors",
+      "source_page": "https://huggingface.co/Comfy-Org/MiniMax-H3"
+    },
+    {
+      "filename": "minimax_h3_audio_vae_fp32.safetensors",
+      "repository": "Comfy-Org/MiniMax-H3",
+      "revision": "54472221d27c695fca9621b0c3ed52f06c4af707",
+      "repository_path": "vae/minimax_h3_audio_vae_fp32.safetensors",
+      "folder": "models/vae",
+      "routes": [
+        "character_swap"
+      ],
+      "size_bytes": 605254808,
+      "sha256": "8e505d95dd1561d47abd43d4238fd40d9bb1ae9e147ed0a4cba778d76ae4db48",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/54472221d27c695fca9621b0c3ed52f06c4af707/vae/minimax_h3_audio_vae_fp32.safetensors",
+      "source_page": "https://huggingface.co/Comfy-Org/MiniMax-H3"
+    },
+    {
+      "filename": "minimax_h3_fun_controlnet_union_pruned_int8_convrot.safetensors",
+      "repository": "Comfy-Org/MiniMax-H3",
+      "revision": "54472221d27c695fca9621b0c3ed52f06c4af707",
+      "repository_path": "model_patches/minimax_h3_fun_controlnet_union_pruned_int8_convrot.safetensors",
+      "folder": "models/model_patches",
+      "routes": [
+        "depth"
+      ],
+      "size_bytes": 2296635360,
+      "sha256": "9c645c0a308c8af361efd43b409710f6f8fec0db297c29503e141a84991fed0c",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/54472221d27c695fca9621b0c3ed52f06c4af707/model_patches/minimax_h3_fun_controlnet_union_pruned_int8_convrot.safetensors",
+      "source_page": "https://huggingface.co/Comfy-Org/MiniMax-H3"
+    },
+    {
+      "filename": "minimax_h3_ref2v_turbo_4step_v1.0_768p_comfyui_bf16.safetensors",
+      "repository": "lightx2v/Minimax-h3-Turbo",
+      "revision": "1a4a150fc6707329409eb52e5d75a0e987ac1928",
+      "repository_path": "minimax_h3_ref2v_turbo_4step_v1.0_768p_comfyui_bf16.safetensors",
+      "folder": "models/loras",
+      "routes": [
+        "ref2v"
+      ],
+      "size_bytes": 1956193000,
+      "sha256": "b4da466e43588004097dfbcde245ccc439c34a26bc997cb76a0b53a1d549ea0d",
+      "url": "https://huggingface.co/lightx2v/Minimax-h3-Turbo/resolve/1a4a150fc6707329409eb52e5d75a0e987ac1928/minimax_h3_ref2v_turbo_4step_v1.0_768p_comfyui_bf16.safetensors",
+      "source_page": "https://huggingface.co/lightx2v/Minimax-h3-Turbo",
+      "steps": [
+        4
+      ]
+    },
+    {
+      "filename": "minimax_h3_ref2v_turbo_8step_v1.0_768p_comfyui_bf16.safetensors",
+      "repository": "lightx2v/Minimax-h3-Turbo",
+      "revision": "1a4a150fc6707329409eb52e5d75a0e987ac1928",
+      "repository_path": "minimax_h3_ref2v_turbo_8step_v1.0_768p_comfyui_bf16.safetensors",
+      "folder": "models/loras",
+      "routes": [
+        "ref2v"
+      ],
+      "size_bytes": 1956193000,
+      "sha256": "6a56f41ab4229c9dd845b9501bbd475ee57e112d846cf2e819d534a1ae928c5a",
+      "url": "https://huggingface.co/lightx2v/Minimax-h3-Turbo/resolve/1a4a150fc6707329409eb52e5d75a0e987ac1928/minimax_h3_ref2v_turbo_8step_v1.0_768p_comfyui_bf16.safetensors",
+      "source_page": "https://huggingface.co/lightx2v/Minimax-h3-Turbo",
+      "steps": [
+        8
+      ]
+    },
+    {
+      "filename": "minimax_h3_fl2v_turbo_4step_v1.0_768p_comfyui_bf16.safetensors",
+      "repository": "lightx2v/Minimax-h3-Turbo",
+      "revision": "1a4a150fc6707329409eb52e5d75a0e987ac1928",
+      "repository_path": "minimax_h3_fl2v_turbo_4step_v1.0_768p_comfyui_bf16.safetensors",
+      "folder": "models/loras",
+      "routes": [
+        "depth"
+      ],
+      "size_bytes": 1956192992,
+      "sha256": "c396a9a06f58399e9df9754b18299818d84a2ddd371724ba48fe4a41221437dc",
+      "url": "https://huggingface.co/lightx2v/Minimax-h3-Turbo/resolve/1a4a150fc6707329409eb52e5d75a0e987ac1928/minimax_h3_fl2v_turbo_4step_v1.0_768p_comfyui_bf16.safetensors",
+      "source_page": "https://huggingface.co/lightx2v/Minimax-h3-Turbo",
+      "steps": [
+        4
+      ]
+    },
+    {
+      "filename": "minimax_h3_fl2v_turbo_8step_v1.0_768p_comfyui_bf16.safetensors",
+      "repository": "lightx2v/Minimax-h3-Turbo",
+      "revision": "1a4a150fc6707329409eb52e5d75a0e987ac1928",
+      "repository_path": "minimax_h3_fl2v_turbo_8step_v1.0_768p_comfyui_bf16.safetensors",
+      "folder": "models/loras",
+      "routes": [
+        "depth",
+        "character_swap"
+      ],
+      "size_bytes": 1956193000,
+      "sha256": "08cfe946033af7d27719b964b6e0a0e50c32138daabbd6ce4137e23df6bf9980",
+      "url": "https://huggingface.co/lightx2v/Minimax-h3-Turbo/resolve/1a4a150fc6707329409eb52e5d75a0e987ac1928/minimax_h3_fl2v_turbo_8step_v1.0_768p_comfyui_bf16.safetensors",
+      "source_page": "https://huggingface.co/lightx2v/Minimax-h3-Turbo",
+      "steps": [
+        8
+      ]
+    },
+    {
+      "filename": "h3_character_swap_v1.5.safetensors",
+      "repository": "akatz-ai/MiniMax-H3-Character-Swap-LoRA",
+      "revision": "96ea3407b230b6f7df71c58c70e31df96bd7e533",
+      "repository_path": "h3_character_swap_v1.5.safetensors",
+      "folder": "models/loras",
+      "routes": [
+        "character_swap"
+      ],
+      "size_bytes": 155110792,
+      "sha256": "8f2c3c3eba161df8d0c6099598b4730f641f5ce01e04cd16d2427cff8a35218f",
+      "url": "https://huggingface.co/akatz-ai/MiniMax-H3-Character-Swap-LoRA/resolve/96ea3407b230b6f7df71c58c70e31df96bd7e533/h3_character_swap_v1.5.safetensors",
+      "source_page": "https://huggingface.co/akatz-ai/MiniMax-H3-Character-Swap-LoRA"
+    },
+    {
+      "filename": "sam3.1_multiplex_fp16.safetensors",
+      "repository": "Comfy-Org/sam3.1",
+      "revision": "7bb8374780a725b4353ed31f3a9395c9742b5621",
+      "repository_path": "checkpoints/sam3.1_multiplex_fp16.safetensors",
+      "folder": "models/checkpoints",
+      "routes": [
+        "character_swap"
+      ],
+      "size_bytes": 1745546848,
+      "sha256": "9ba99c92703c2e8b4f47de2d34a539bb8e18923049e238b780d70dbe6368eb03",
+      "url": "https://huggingface.co/Comfy-Org/sam3.1/resolve/7bb8374780a725b4353ed31f3a9395c9742b5621/checkpoints/sam3.1_multiplex_fp16.safetensors",
+      "source_page": "https://huggingface.co/Comfy-Org/sam3.1"
+    },
+    {
+      "filename": "depth_anything_3_mono_large.safetensors",
+      "repository": "Comfy-Org/Depth-Anything-3",
+      "revision": "8265be070134dc7459217308cdc03109bde199b0",
+      "repository_path": "geometry_estimation/depth_anything_3_mono_large.safetensors",
+      "folder": "models/geometry_estimation",
+      "routes": [
+        "depth"
+      ],
+      "size_bytes": 1336748056,
+      "sha256": "9b44eda5bedba5b4e125686fdb79d1db309c1b9785277576eb930f885b008f96",
+      "url": "https://huggingface.co/Comfy-Org/Depth-Anything-3/resolve/8265be070134dc7459217308cdc03109bde199b0/geometry_estimation/depth_anything_3_mono_large.safetensors",
+      "source_page": "https://huggingface.co/Comfy-Org/Depth-Anything-3"
+    }
+  ]
+}

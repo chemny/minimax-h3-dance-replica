@@ -1,0 +1,11 @@
+{
+  "route": "character_swap",
+  "connection": {"kind": "native", "url": "http://127.0.0.1:8188", "key_env": "COMFY_API_KEY"},
+  "source": "source.mp4",
+  "identity": "identity.png",
+  "prompt": "Use <Picture 1> for the adult character's appearance and <Video 1> for the original dance performance and scene. Preserve the photo's face, hair and clothing while following the original motion and expression amplitude.",
+  "out": "case-output",
+  "steps": 8,
+  "resolution_preset": "768",
+  "mask_expansion": 64
+}

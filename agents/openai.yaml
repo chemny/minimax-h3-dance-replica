@@ -1,0 +1,3 @@
+interface:
+  display_name: "MiniMax H3 Dance Replica"
+  short_description: "通过本地 H3 与 ComfyUI 分析舞蹈、换人物生成并保留原音乐"

@@ -1,0 +1,32 @@
+{
+  "name": "h3-local",
+  "status": "Working backend preset, not a universal replication rule or optimum",
+  "generation": {
+    "steps": 8,
+    "width": 768,
+    "height": 1344,
+    "depth_strength": 0.7,
+    "control_end": 0.65,
+    "lora_strength": 1.0,
+    "shift_video": 6.0,
+    "shift_audio": 3.0,
+    "sampler": "euler",
+    "scheduler": "simple"
+  },
+  "depth": {
+    "model": "depth_anything_3_mono_large.safetensors",
+    "dtype": "fp16",
+    "resolution": 1344,
+    "resize_method": "upper_bound_resize",
+    "normalization": "v2_style",
+    "apply_sky_clip": false
+  },
+  "models": {
+    "base": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+    "controlnet": "minimax_h3_fun_controlnet_union_pruned_int8_convrot.safetensors",
+    "encoder": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+    "vae": "minimax_h3_video_vae_fp16.safetensors",
+    "lora_4": "minimax_h3_fl2v_turbo_4step_v1.0_768p_comfyui_bf16.safetensors",
+    "lora_8": "minimax_h3_fl2v_turbo_8step_v1.0_768p_comfyui_bf16.safetensors"
+  }
+}

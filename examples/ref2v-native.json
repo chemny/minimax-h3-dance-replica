@@ -1,0 +1,12 @@
+{
+  "route": "ref2v",
+  "connection": {"kind": "native", "url": "http://127.0.0.1:8188", "key_env": "COMFY_API_KEY"},
+  "source": "source.mp4",
+  "identity": "identity.png",
+  "prompt": "Use <Picture 1> for the adult character's identity, hairstyle, clothing and accessories. Use <Video 1> for the dance actions, expression amplitude, timing, camera and scene. Keep the character's appearance consistent and follow the original performance without adding gestures.",
+  "out": "case-output",
+  "steps": 8,
+  "motion_reference_long_edge": 512,
+  "width": 768,
+  "height": 1344
+}

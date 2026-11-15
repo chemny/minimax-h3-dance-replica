@@ -1,0 +1,25 @@
+{
+  "ref2v": {
+    "base": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+    "encoder": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+    "vae": "minimax_h3_video_vae_fp16.safetensors",
+    "lora_4": "minimax_h3_ref2v_turbo_4step_v1.0_768p_comfyui_bf16.safetensors",
+    "lora_8": "minimax_h3_ref2v_turbo_8step_v1.0_768p_comfyui_bf16.safetensors",
+    "steps": 8, "lora_strength": 1.0, "cfg": 1.0,
+    "sampler": "euler", "scheduler": "simple", "shift_video": 12.0, "shift_audio": 3.0,
+    "sage": true, "motion_reference_long_edge": 512, "width": 768, "height": 1344
+  },
+  "character_swap": {
+    "base": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+    "encoder": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+    "vae": "minimax_h3_video_vae_fp16.safetensors",
+    "audio_vae": "minimax_h3_audio_vae_fp32.safetensors",
+    "adapter": "h3_character_swap_v1.5.safetensors",
+    "lora_8": "minimax_h3_fl2v_turbo_8step_v1.0_768p_comfyui_bf16.safetensors",
+    "sam": "sam3.1_multiplex_fp16.safetensors",
+    "steps": 8, "lora_strength": 1.0, "adapter_strength": 1.0, "cfg": 1.0,
+    "sampler": "er_sde", "scheduler": "normal", "shift_video": 12.0, "shift_audio": 3.0,
+    "attention_backend": "comfy kitchen attention", "activation_memory_gib": 17.0,
+    "resolution_preset": "768", "mask_expansion": 64, "window_frames": 175, "history_frames": 18
+  }
+}

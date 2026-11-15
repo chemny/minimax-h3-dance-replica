@@ -1,0 +1,11 @@
+{
+  "route": "depth",
+  "connection": {"kind": "native", "url": "http://127.0.0.1:8188", "key_env": "COMFY_API_KEY"},
+  "source": "source.mp4",
+  "identity": "identity.png",
+  "performance": "performance.json",
+  "out": "case-output",
+  "steps": 8,
+  "width": 768,
+  "height": 1344
+}
